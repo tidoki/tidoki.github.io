@@ -25,39 +25,30 @@
     .cta-container {
         position: fixed;
         top: 25%;
-        /* 1/4 từ trên xuống (10cm -> 2,5cm) */
         right: 0;
-        /* Dính sát cạnh phải */
         display: flex;
         flex-direction: column;
         gap: 5px;
-        /* Khoảng cách giữa các nút */
         z-index: 9999;
         transform: translateY(0);
-        /* Không cần căn giữa */
     }
 
     .cta-button {
         display: flex;
         align-items: center;
         padding: 8px 10px;
-        /* Giảm padding để tiết kiệm diện tích */
         background-color: #0088FF;
-        /* Màu xanh Zalo */
         color: white;
         border-radius: 50px 0 0 50px;
-        /* Bo góc chỉ bên trái */
         text-decoration: none;
         font-weight: bold;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s;
         max-width: 160px;
-        /* Giới hạn chiều rộng tối đa */
     }
 
     .cta-button:hover {
         transform: translateX(-5px);
-        /* Đẩy nhẹ ra ngoài khi hover */
         color: white;
     }
 
@@ -65,35 +56,89 @@
         width: 28px;
         height: 28px;
         margin-right: 5px;
-        /* Khoảng cách icon và text */
     }
 
     .call-phone {
         background-color: #e52c02;
-        /* Màu đỏ cho nút gọi */
     }
 
-    /* Giảm font chữ hơn nữa trên màn hình nhỏ */
     @media (max-width: 480px) {
         .cta-button {
             font-size: 12px;
-            /* Kích thước nhỏ hơn cho màn hình dưới 480px */
+        }
+    }
+
+    .shake {
+        animation: shake 0.5s ease-in-out 5;
+    }
+
+    .pulse {
+        animation: pulse 1s ease-in-out 5;
+    }
+
+    @keyframes shake {
+
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+
+        25% {
+            transform: translateX(-5px);
+        }
+
+        50% {
+            transform: translateX(5px);
+        }
+
+        75% {
+            transform: translateX(-5px);
+        }
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+
+        100% {
+            transform: scale(1);
         }
     }
 </style>
 
+
 <body id="page-top">
     <div class="cta-container">
         <!-- Nút Nhắn Zalo -->
-        <a href="https://zalo.me/0346707820" class="cta-button" target="_blank">
+        <a href="https://zalo.me/0346707820" class="cta-button" id="zaloButton" target="_blank">
             <img src="assets/icon-zalo.webp" alt="Zalo Icon"> Nhắn Zalo
         </a>
-
+    
         <!-- Nút Gọi ngay -->
-        <a href="tel:0346707820" class="cta-button call-phone">
+        <a href="tel:0346707820" class="cta-button call-phone" id="callButton">
             <i class="bi bi-telephone" style="margin-right: 5px; margin-left: 5px;"></i> Gọi ngay
         </a>
     </div>
+
+    <script>
+        function addAnimation(element, animationClass, interval) {
+            setInterval(() => {
+                element.classList.add(animationClass);
+                setTimeout(() => element.classList.remove(animationClass), 2000);
+            }, interval);
+        }
+    
+        const zaloButton = document.getElementById('zaloButton');
+        const callButton = document.getElementById('callButton');
+    
+        addAnimation(zaloButton, 'shake', 10000); // Rung sau mỗi 10 giây
+        addAnimation(callButton, 'pulse', 7000); // Nhấp nháy sau mỗi 7 giây
+    </script>
 
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
