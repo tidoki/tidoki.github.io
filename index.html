@@ -24,44 +24,76 @@
 <style>
     .cta-container {
         position: fixed;
-        top: 50%;
-        left: 0; /* Dính sát cạnh trái */
+        top: 25%;
+        /* 1/4 từ trên xuống (10cm -> 2,5cm) */
+        right: 0;
+        /* Dính sát cạnh phải */
         display: flex;
         flex-direction: column;
-        gap: 5px; /* Khoảng cách giữa các nút */
+        gap: 5px;
+        /* Khoảng cách giữa các nút */
         z-index: 9999;
-        transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+        transform: translateY(0);
+        /* Không cần căn giữa */
     }
 
     .cta-button {
         display: flex;
         align-items: center;
-        padding: 8px 10px; /* Giảm padding để tiết kiệm diện tích */
-        background-color: #0088FF; /* Màu xanh Zalo */
+        padding: 8px 10px;
+        /* Giảm padding để tiết kiệm diện tích */
+        background-color: #0088FF;
+        /* Màu xanh Zalo */
         color: white;
-        border-radius: 0 50px 50px 0; /* Bo góc chỉ bên phải */
+        border-radius: 50px 0 0 50px;
+        /* Bo góc chỉ bên trái */
         text-decoration: none;
         font-weight: bold;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s;
-        max-width: 160px; /* Giới hạn chiều rộng tối đa */
+        max-width: 160px;
+        /* Giới hạn chiều rộng tối đa */
     }
 
     .cta-button:hover {
-        transform: translateX(5px); /* Hiệu ứng đẩy nhẹ khi hover */
+        transform: translateX(-5px);
+        /* Đẩy nhẹ ra ngoài khi hover */
         color: white;
     }
 
     .cta-button img {
         width: 28px;
         height: 28px;
-        margin-right: 5px; /* Giảm khoảng cách icon và text */
+        margin-right: 5px;
+        /* Khoảng cách icon và text */
     }
 
     .call-phone {
-        background-color: #e52c02; /* Màu đỏ cho nút gọi */
+        background-color: #e52c02;
+        /* Màu đỏ cho nút gọi */
+    }
+
+    /* Giảm font chữ hơn nữa trên màn hình nhỏ */
+    @media (max-width: 480px) {
+        .cta-button {
+            font-size: 12px;
+            /* Kích thước nhỏ hơn cho màn hình dưới 480px */
+        }
     }
 </style>
+
+<div class="cta-container">
+    <!-- Nút Nhắn Zalo -->
+    <a href="https://zalo.me/0346707820" class="cta-button" target="_blank">
+        <img src="assets/icon-zalo.webp" alt="Zalo Icon"> Nhắn Zalo
+    </a>
+
+    <!-- Nút Gọi ngay -->
+    <a href="tel:0346707820" class="cta-button call-phone">
+        <i class="bi bi-telephone" style="margin-right: 5px;"></i> Gọi ngay
+    </a>
+</div>
+
 
 
 <body id="page-top">
@@ -70,10 +102,10 @@
         <a href="https://zalo.me/0346707820" class="cta-button" target="_blank">
             <img src="assets/icon-zalo.webp" alt="Zalo Icon"> Nhắn Zalo
         </a>
-    
+
         <!-- Nút Gọi ngay -->
         <a href="tel:0346707820" class="cta-button call-phone">
-            <i class="bi bi-telephone" style="margin-right: 5px;"></i> Gọi ngay
+            <i class="bi bi-telephone" style="margin-right: 5px; margin-left: 5px;"></i> Gọi ngay
         </a>
     </div>
 
@@ -493,7 +525,7 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="productModalLabel">Chi tiết sản phẩm</h5>
+                        <h5 class="modal-title text-primary" id="productModalLabel">Chi tiết sản phẩm</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
