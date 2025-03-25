@@ -21,7 +21,62 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 
+<style>
+    .cta-container {
+        position: fixed;
+        top: 50%;
+        left: 0; /* Dính sát cạnh trái */
+        display: flex;
+        flex-direction: column;
+        gap: 5px; /* Khoảng cách giữa các nút */
+        z-index: 9999;
+        transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    }
+
+    .cta-button {
+        display: flex;
+        align-items: center;
+        padding: 8px 10px; /* Giảm padding để tiết kiệm diện tích */
+        background-color: #0088FF; /* Màu xanh Zalo */
+        color: white;
+        border-radius: 0 50px 50px 0; /* Bo góc chỉ bên phải */
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s;
+        max-width: 160px; /* Giới hạn chiều rộng tối đa */
+    }
+
+    .cta-button:hover {
+        transform: translateX(5px); /* Hiệu ứng đẩy nhẹ khi hover */
+        color: white;
+    }
+
+    .cta-button img {
+        width: 28px;
+        height: 28px;
+        margin-right: 5px; /* Giảm khoảng cách icon và text */
+    }
+
+    .call-phone {
+        background-color: #e52c02; /* Màu đỏ cho nút gọi */
+    }
+</style>
+
+
 <body id="page-top">
+    <div class="cta-container">
+        <!-- Nút Nhắn Zalo -->
+        <a href="https://zalo.me/0346707820" class="cta-button" target="_blank">
+            <img src="assets/icon-zalo.webp" alt="Zalo Icon"> Nhắn Zalo
+        </a>
+    
+        <!-- Nút Gọi ngay -->
+        <a href="tel:0346707820" class="cta-button call-phone">
+            <i class="bi bi-telephone" style="margin-right: 5px;"></i> Gọi ngay
+        </a>
+    </div>
+
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
@@ -158,10 +213,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 1Ocm</h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau.
-                            Cao 9.5 cm giúp ngăn cách nệm và mặt đất. Chống ẩm mốc cho nệm.
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau.<br>
+                            - Cao 9.5 cm giúp ngăn cách nệm và mặt đất. Chống ẩm mốc cho nệm.<br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.<br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -176,10 +231,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 1O + đầu giường </h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau.
-                            Cao 9.5 cm giúp ngăn cách nệm và mặt đất. Chống ẩm mốc cho nệm.
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau. <br>
+                            - Cao 9.5 cm giúp ngăn cách nệm và mặt đất. Chống ẩm mốc cho nệm.<br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.<br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -195,10 +250,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 2Ocm</h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau. Chân cao 2Ocm/3Ocm
-                            tính từ mặt đất đến bề mặt giường.
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại.
+                            - Mỗi tấm kích thước bằng nhau. Chân cao 2Ocm/3Ocm tính từ mặt đất đến bề mặt giường. <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -214,10 +269,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 2Ocm + tựa đầu giường</h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau. Chân cao 2Ocm/3Ocm
-                            tính từ mặt đất đến bề mặt giường.
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            - Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau. Chân cao
+                            2Ocm/3Ocm <br>
+                            tính từ mặt đất đến bề mặt giường. <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -232,11 +288,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 1Ocm có sơn bóng</h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau.
-                            Cao 9.5cm tính từ mặt đất đến bề mặt giường.
-                            Có sơn bóng bề mặt trên và khung chống ẩm mốc.
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            - Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau. <br>
+                            - Cao 9.5cm tính từ mặt đất đến bề mặt giường. <br>
+                            - Có sơn bóng bề mặt trên và khung chống ẩm mốc. <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -251,11 +307,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 2Ocm có sơn bóng</h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau.
-                            Cao 2Ocm/3Ocm tính từ mặt đất đến bề mặt giường. Mối tấm là 6 chân. Tổng cộng 12 chân
-                            Có sơn bóng bề mặt trên và khung chống ẩm mốc.
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau. <br>
+                            - Cao 2Ocm/3Ocm tính từ mặt đất đến bề mặt giường. Mối tấm là 6 chân. Tổng cộng 12 chân <br>
+                            - Có sơn bóng bề mặt trên và khung chống ẩm mốc. <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -271,11 +327,11 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 3Ocm có đầu tựa có sơn bóng </h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau.
-                            Cao 2Ocm/3Ocm tính từ mặt đất đến bề mặt giường. Mối tấm là 6 chân. Tổng cộng 12 chân
-                            Có sơn bóng bề mặt trên và khung chống ẩm mốc.
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Mỗi tấm kích thước bằng nhau. <br>
+                            - Cao 2Ocm/3Ocm tính từ mặt đất đến bề mặt giường. Mối tấm là 6 chân. Tổng cộng 12 chân <br>
+                            - Có sơn bóng bề mặt trên và khung chống ẩm mốc. <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -290,10 +346,10 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 2Ocm nhỏ cho 1 người nằm </h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 1tấm, kích thước nhỏ
-                            Làm cao 2Ocm/3Ocm, có 6 chân.
-                            Nhiều kích thước 6Ocm x 2m, 7Ocm x 2m, 8Ocm x 2m, 9Ocm x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ quế, cấu tạo gồm 1tấm, kích thước nhỏ <br>
+                            - Làm cao 2Ocm/3Ocm, có 6 chân. <br>
+                            - Nhiều kích thước 6Ocm x 2m, 7Ocm x 2m, 8Ocm x 2m, 9Ocm x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -308,9 +364,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường phản gỗ tràm cao 1Ocm</h5>
                         <p class="card-text d-none">
-                            Giường gỗ tràm, cấu tạo gồm 2 tấm ghép lại. Cao 1Ocm
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ tràm, cấu tạo gồm 2 tấm ghép lại. Cao 1Ocm <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -325,9 +381,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 2Ocm</h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Cao 19cm
-                            Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
-                            Nếu bạn cần đóng kích thước khác thì liên hệ shop.
+                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Cao 19cm <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
+                            - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
                 </div>
@@ -343,9 +399,9 @@
                     <div class="card-body">
                         <h5 class="card-title">Giường gỗ quế cao 2Ocm sơn trắng</h5>
                         <p class="card-text d-none">
-                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Cao 19cm
-                            - Sơn màu trắng nan giường và bề mặt khung.
-                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m.
+                            Giường gỗ quế, cấu tạo gồm 2 tấm ghép lại. Cao 19cm <br>
+                            - Sơn màu trắng nan giường và bề mặt khung. <br>
+                            - Nhiều kích thước 1m2 x 2m, 1m4 x 2m, 1m6 x 2m, 1m8 x 2m. <br>
                             - Nếu bạn cần đóng kích thước khác thì liên hệ shop.
                         </p>
                     </div>
@@ -432,8 +488,6 @@
 
         </div>
 
-
-
         <!-- Modal -->
         <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -448,30 +502,24 @@
                         <p id="modalText"></p>
                     </div>
                     <div class="modal-footer">
-                        <!-- Nút Close màu đỏ -->
-                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                        
-                        <!-- Nút Nhắn Zalo màu xanh -->
-                        <button type="button" class="btn btn-zalo" onclick="window.open('https://zalo.me/0346707820', '_blank')">Nhắn zalo</button>
+                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-primary zalo-btn"
+                            onclick="window.open('https://zalo.me/0346707820', '_blank')"> <i
+                                class="bi bi-chat-dots"></i> Nhắn zalo</button>
                     </div>
-                    
-                    <!-- Thêm CSS tùy chỉnh -->
-                    <style>
-                        .btn-zalo {
-                            background-color: #0088FF; /* Màu xanh giống logo Zalo */
-                            color: white; /* Màu chữ trắng */
-                        }
-                        .btn-zalo:hover {
-                            background-color: #0077E6; /* Màu xanh đậm hơn khi hover */
-                        }
-                    </style>
-                    
+
                 </div>
             </div>
         </div>
     </section>
 
     <style>
+        .zalo-btn:hover {
+            background-color: #0068FF;
+            border: #0068FF;
+            /* Màu xanh thương hiệu Zalo */
+        }
+
         .card-hover {
             transition: transform 0.3s ease, color 0.3s ease;
             cursor: pointer;
@@ -513,12 +561,13 @@
         function showProduct(card) {
             const image = card.querySelector(".card-img-top").src;
             const title = card.querySelector(".card-title").textContent;
-            const text = card.querySelector(".card-text").textContent;
+            const text = card.querySelector(".card-text").innerHTML; // Thay đổi từ textContent thành innerHTML
 
             document.getElementById('modalImage').src = image;
             document.getElementById('modalTitle').textContent = title;
-            document.getElementById('modalText').textContent = text;
+            document.getElementById('modalText').innerHTML = text; // Hiển thị HTML trong card-text
         }
+
     </script>
 
 
